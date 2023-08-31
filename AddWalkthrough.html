@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Walkthrough</title>
+    <link rel="icon" href="media/shield-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            padding: 40px;
+        }
+    </style>
+
+    <form action="" method="post">
+
+        <div class="container">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Bypass">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Date</label>
+                <input type="date" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Walkthrough Thumbnail</label>
+                <input class="form-control" type="file" accept="image/*" id="formFile">
+            </div>
+
+            <div id="inputContainer" style="margin: 10px 0px 10px;">
+
+                <input type="text" class="form-control" id="exampleFormControlInput2" name="inputField[]"
+                    placeholder="Text 1">
+
+            </div>
+            <button type="button" class="btn btn-primary" id="addInputButton">Add text field</button>
+
+
+
+            <div id="imageContainer" style="margin: 10px 0px 10px;">
+
+                <input type="file" accept="image/*" class="form-control" id="exampleFormControlInput3" name="fig[]"
+                    placeholder="Fig 1">
+
+            </div>
+            <button type="button" class="btn btn-primary" id="addimageButton">Add Figure</button>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary text-center " id="submit"
+            style="position: absolute; left: 80%;">Post Walkthrough</button>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/3fc807a9e6.js" crossorigin="anonymous"></script>
+
+    <script src="add.js"></script>
+    <script src="addimage.js"></script>
+</body>
+
+</html>
